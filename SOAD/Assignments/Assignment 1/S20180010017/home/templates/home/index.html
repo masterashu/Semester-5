@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<body>
+<h1>Welcome, {{ request.user.get_full_name }}</h1>
+<a href="{% url 'logout' %}">logout</a><br/>
+
+<table border="1">
+    <thead>
+    Jedi Warriors
+    </thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Alive</th>
+        <th>Lightsaber Color</th>
+        <th>Midi-Clorins Level</th>
+        <th>Jedi Position</th>
+    </tr>
+    {% for ashutosh_chauhan in jedis %}
+        {% include 'home/jedi_snippet.html' with jedi=ashutosh_chauhan %}
+    {% endfor %}
+</table>
+</body>
+</html>

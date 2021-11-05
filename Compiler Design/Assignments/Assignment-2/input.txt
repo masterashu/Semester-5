@@ -1,0 +1,8 @@
+E -> TH
+H -> pTH
+H -> #
+T -> F
+J -> mFJ
+J -> #
+F -> id
+F -> xEn

@@ -1,0 +1,37 @@
+digraph G {
+ordering=out ;
+  node [shape=box] ;
+
+  1 [label="a"]
+  2 [label="b"]
+  3 [label="c"]
+  4 [label="d"]
+  5 [label="f"]
+  6 [label="g"]
+  7 [label="+"]
+  8 [label="-"]
+  9 [label="+"]
+  10 [label="*"]
+  11 [label="-"]
+  13 [label="-"]
+  16 [label="+"]
+  19 [label="-"]
+  20 [label="/"]
+
+  7 -> 1
+  7 -> 8
+  8 -> 2
+  9 -> 7
+  9 -> 10
+  10 -> 3
+  10 -> 11
+  11 -> 4
+  13 -> 9
+  13 -> 7
+  16 -> 13
+  16 -> 10
+  19 -> 16
+  19 -> 20
+  20 -> 5
+  20 -> 6
+}

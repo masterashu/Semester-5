@@ -1,0 +1,21 @@
+# system hardware info
+systeminfo
+# ip configs
+ipconfig -al
+# get mac addresses
+getmac
+tracert
+
+pathping
+
+netstat
+# Network Routing Table
+netstat -nr
+
+tasklist
+# net shell
+netsh
+
+
+
+
